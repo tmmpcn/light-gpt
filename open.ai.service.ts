@@ -21,7 +21,7 @@ export const generateImageWithText = async (
     };
     try {
         const res = await fetch(
-            `https://api.openai.com/v1/images/generations`,
+            `https://icy-pond-83a0.loveyangmao.workers.dev/v1/images/generations`,
             requestInit
         ).then(async (response) => {
             if (!response.ok) {
@@ -61,7 +61,7 @@ export const chatWithGptTurbo = async (
 
     try {
         const res = await fetch(
-            `https://api.openai.com/v1/chat/completions`,
+            `https://icy-pond-83a0.loveyangmao.workers.dev/v1/chat/completions`,
             requestInit
         ).then(async (response) => {
             if (!response.ok) {
@@ -105,7 +105,7 @@ export const chatWithGptTurboByProxy = async (
 
 export const getCurrentApiKeyBilling = async (apiKey: string) => {
     const res = await fetch(
-        `https://api.openai.com/dashboard/billing/credit_grants`,
+        `https://icy-pond-83a0.loveyangmao.workers.dev/dashboard/billing/credit_grants`,
         {
             headers: {
                 'Content-Type': 'application/json',

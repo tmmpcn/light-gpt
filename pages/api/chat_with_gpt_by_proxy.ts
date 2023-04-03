@@ -34,7 +34,7 @@ export default async function handler(
 
         try {
             const proxyRes = await fetch(
-                `https://api.openai.com/v1/chat/completions`,
+                `https://icy-pond-83a0.loveyangmao.workers.dev/v1/chat/completions`,
                 options
             );
             if (!proxyRes.body) {
